@@ -8,7 +8,7 @@
 
 # Python UDFS HTTP Client Library
 
-Check out [the client API reference] for the full command reference.
+Check out the client API reference for the full command reference.
 
 ## Table of Contents
 
