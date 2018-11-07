@@ -6,7 +6,7 @@
 [![](https://img.shields.io/pypi/v/udfsapi.svg?style=flat-square)](https://pypi.python.org/pypi/udfsapi)
 [![Build Status](https://travis-ci.org/udfs/py-udfs-api.svg?branch=master)](https://travis-ci.org/udfs/py-udfs-api)
 
-![Python UDFS HTTP Client Library]
+# Python UDFS HTTP Client Library
 
 Check out [the client API reference] for the full command reference.
 
