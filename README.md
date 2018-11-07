@@ -21,13 +21,6 @@ You may experience compatibility issues when attempting to use it with other ver
 
 - [Install](#install)
 - [Usage](#usage)
-- [Documentation](#documentation)
-  - [Important changes from udfsApi 0.2.x](#important-changes-from-udfsapi-02x)
-- [Featured Projects](#featured-projects)
-- [Contribute](#contribute)
-  - [IRC](#irc)
-  - [Bug reports](#bug-reports)
-  - [Pull requests](#pull-requests)
 - [License](#license)
 
 ## Install
@@ -110,68 +103,6 @@ This module also contains some helper functions for adding strings and JSON to u
 >>> client.get_json(_)
 [1, 77, 'lol']
 ```
-
-## Documentation
-
-Documentation (currently mostly API documentation unfortunately) is available on udfs:
-
-https://udfs.io/ipns/QmZ86ow1byeyhNRJEatWxGPJKcnQKG7s51MtbHdxxUddTH/Software/Python/udfsapi/
-
-The `udfs` [command-line Client documentation](https://udfs.io/docs/commands/) may also be useful in some cases.
-
-### Important changes from `udfsApi 0.2.x`
-
- * The Python package has been renamed from `udfsApi` to `udfsapi`
- * The PIP module has been renamed from `udfs-api` to `udfsapi` (please update your requirement files)
- * A lot of changes in the internal code
-    - Commands have been completely removed
-    - Usage of `requests` or other libraries is considered an implementation detail from now on
- * Most parts of the library (except for `Client()`) are now considered internal and may therefore break at any time
-   ([reference](https://udfs.io/ipns/QmZ86ow1byeyhNRJEatWxGPJKcnQKG7s51MtbHdxxUddTH/Software/Python/udfsapi/internal_ref.html))
-    - We will try to keep breakage for these modules at a minimum
-    - If you require stabilisation of some feature please open an issue with the feature in question and your preceived use-case
- * Raised exceptions have been completely changed and are now documented with guaranteed backwards compatibility
-   ([reference](https://udfs.io/ipns/QmZ86ow1byeyhNRJEatWxGPJKcnQKG7s51MtbHdxxUddTH/Software/Python/udfsapi/api_ref.html#module-udfsapi.exceptions))
- * The new `udfsapi.connect()` function allows creating a `Client` instance, while also checking whether a compatible udfs daemon instance is actually available
- * Methods in `Client()` now have parameters for options
-
-## Featured Projects
-
-Projects that currently use py-udfs-api. If your project isn't here, feel free to submit a PR to add it!
-
-- [git-remote-udfs](https://github.com/larsks/git-remote-udfs) allows users to push and pull git repositories from the udfs network.
-- [InterPlanetary Wayback](https://github.com/oduwsdl/ipwb) interfaces web archive ([WARC](https://www.iso.org/standard/44717.html)) files for distributed indexing and replay using udfs.
-
-## Contribute
-
-### IRC
-
-Join us on IRC at `#udfs` on [chat.freenode.net](https://webchat.freenode.net) if you have any suggestions or questions,
-or if you just want to discuss udfs and python.
-
-### Bug reports
-
-You can submit bug reports using the [GitHub issue tracker](https://github.com/udfs/python-udfs-api/issues).
-
-### Pull requests
-
-Pull requests are welcome.  Before submitting a new pull request, please
-make sure that your code passes both the [code formatting](https://www.python.org/dev/peps/pep-0008/) check:
-
-    $ tox -e codestyle
-
-And the unit tests:
-
-    $ tox
-
-You can arrange to run the code style tests automatically before each commit by
-installing a `pre-commit` hook:
-
-    $ ./tools/pre-commit --install
-
-Please make sure to include new unit tests for new features or changes in
-behavior.
-
 ## License
 
 This code is distributed under the terms of the [MIT license](https://opensource.org/licenses/MIT).  Details can be found in the file
