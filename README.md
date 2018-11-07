@@ -6,16 +6,9 @@
 [![](https://img.shields.io/pypi/v/udfsapi.svg?style=flat-square)](https://pypi.python.org/pypi/udfsapi)
 [![Build Status](https://travis-ci.org/udfs/py-udfs-api.svg?branch=master)](https://travis-ci.org/udfs/py-udfs-api)
 
-![Python UDFS HTTP Client Library](https://udfs.io/udfs/QmQJ68PFMDdAsgCZvA1UVzzn18asVcf7HVvCDgpjiSCAse)
+![Python UDFS HTTP Client Library]
 
-Check out [the client API reference](https://udfs.io/ipns/QmZ86ow1byeyhNRJEatWxGPJKcnQKG7s51MtbHdxxUddTH/Software/Python/udfsapi/) for the full command reference.
-
-**Important:** The `py-udfs-api` PIP package and Python module have both been renamed to `udfsapi` (no dash, lower-case `a`).
-The legacy `udfs-api`/`udfsApi` package/module will only work for udfs 0.3.x and Python 2 and is deprecated. [Please upgrade](#important-changes-from-udfsapi-02x)!
-
-**Note:** This library constantly has to change to stay compatible with the udfs HTTP API.
-Currently, this library is tested against [go-udfs v0.4.10](https://github.com/udfs/go-udfs/releases/tag/v0.4.10).
-You may experience compatibility issues when attempting to use it with other versions of go-udfs.
+Check out [the client API reference] for the full command reference.
 
 ## Table of Contents
 
